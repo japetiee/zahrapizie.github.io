@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Zahra Zakiya</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #c9b3b3; /* Warna Ungu */
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container utama (Card) */
+        .card {
+            background-color: #ffffff;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+        }
+
+        /* Frame Foto Putih bundar dengan bayangan */
+        .profile-frame {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px auto;
+            border-radius: 50%;
+            background-color: #ffffff;
+            border: 5px solid #ffffff; /* Frame foto putih */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Headings & Text Align */
+        h1 {
+            color: #574242;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        h3, h4, p.subtitle {
+            color: #555555;
+            margin: 4px 0;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .datetime {
+            color: #777777;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Tautan Sosial Media */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            color: #574242;
+            font-weight: 600;
+            padding: 8px 14px;
+            border: 1px solid #e0e0e0;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #f3e5f5;
+            border-color: #ab47bc;
+        }
+
+        .icon {
+            width: 18px;
+            height: 18px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #eeeeee;
+            margin: 25px 0;
+        }
+
+        /* Section styling */
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h2 {
+            color: #574242;
+            border-bottom: 2px solid #ab47bc;
+            padding-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        /* Bullet Point untuk Hobi */
+        ul {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f3e5f5;
+            color: #574242;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- 1. HTML Picture / Foto Profil dengan Frame Putih -->
+        <div class="profile-frame">
+            <picture>
+                <img src="foto 2.jpeg" alt="Foto Zahra Zakiya" class="profile-img">
+            </picture>
+        </div>
+
+        <!-- HTML Headings & Align -->
+        <h1>Zahra Zakiya</h1>
+        <h3>NIM: 102042500116</h3>
+        <h4>Fakultas Rekayasa Industri | Prodi Sistem Informasi</h4>
+        <p class="subtitle">Email: <a href="mailto:zzahrazakiya@gmail.com" style="color: #4a148c;">zzahrazakiya@gmail.com</a></p>
+
+        <!-- HTML Date and Time -->
+        <p class="datetime">
+            <small>Terakhir diperbarui: <time datetime="2026-09-29">29 September 2026</time></small>
+        </p>
+
+        <!-- HTML Link Social Media (Target _blank) -->
+        <div class="social-links">
+            <a href="https://www.instagram.com/zzahrazakiya/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="IG" class="icon">
+                <span>Instagram</span>
+            </a>
+            <a href="https://www.linkedin.com/in/zahra-zakiya-840929377" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icon">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/japetiee" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="icon">
+                <span>GitHub</span>
+            </a>
+        </div>
+
+        <hr>
+
+        <!-- Penjabaran Hobi dengan Bullet Point -->
+        <div class="section">
+            <h2>Hobi Saya</h2>
+            <ul>
+                <li><strong>Olahraga:</strong> Menjaga kesehatan dan kebugaran fisik secara rutin.</li>
+                <li><strong>Bernyanyi:</strong> Mengekspresikan diri dan menyalurkan minat dalam seni musik.</li>
+                <li><strong>Bersosialisasi:</strong> Senang berinteraksi, berdiskusi, dan membangun hubungan baik dengan orang lain.</li>
+            </ul>
+        </div>
+
+        <!-- HTML Table -->
+        <div class="section">
+            <h2>Informasi Akademik</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kategori</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Perguruan Tinggi</td>
+                        <td>Telkom University Jakarta</td>
+                    </tr>
+                    <tr>
+                        <td>Fakultas</td>
+                        <td>Rekayasa Industri</td>
+                    </tr>
+                    <tr>
+                        <td>Program Studi</td>
+                        <td>Sistem Informasi</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
